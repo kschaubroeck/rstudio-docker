@@ -1,0 +1,2 @@
+# Directory for configuration files that should not be public and version controlled
+.rstudio
