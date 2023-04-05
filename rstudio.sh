@@ -3,7 +3,7 @@
 # We need to determine what environment we are using (dev or production) so we can load
 # the container from the appropriate soure (a local dev build of the latest github build)
 # Assume by default we are going to use production
-CONTAINER=ghcr.io/kschaubroeck/rstudio-docker:v0.1.0
+CONTAINER=ghcr.io/kschaubroeck/rstudio-docker:v0.1.1
 
 # We also want to give the user the ability to change the default port without editing the script
 # just in case it's needed
@@ -28,6 +28,7 @@ do
         p) PORT=${OPTARG};;
         m) MEMORY=${OPTARG};;
         d) PROJECT_DIR=${OPTARG};;
+        r) IS_ROOT=true;;
     esac
 done
 
