@@ -21,7 +21,7 @@ There are a variety of options for customizing the container:
 * The `-p` flag changes the port used to access RStudio. You will need this information later. By default, the port is 8787.
 * The `-m` flag changes how much RAM (in gigabytes) is allocated to Docker/RStudio. Enter a numeric value.
 * The `-d` flag changes the directory the project is stored within. Setting this value means that you can find your project in the Docker container's ~/`-d` directory. The default value is the name of the current working directory (i.e. the name of the folder where the terminal is currently running).
-* The 'r' flag adds the rstudio user to the list of users who can use the root sudo command. This flag accepts no values.
+* The `r` flag adds the rstudio user to the list of users who can use the root sudo command. This flag accepts no values.
 
 For example, I could set the server to be accessible from port 1234, allocate 12 gigabytes of RAM, make the project be found in the ~/my-project folder, and make the password `secret` with the following command.
 
@@ -100,7 +100,7 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-## 5. Using GitHub
+### 5. Using GitHub
 
 You can know use the RStudio interface to create, clone, and manage repositories. When connecting to GitHub, you will be asked to enter the passphrase you used to create the SSH key. 
 
